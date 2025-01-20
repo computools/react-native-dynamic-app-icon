@@ -1,8 +1,8 @@
-import { NativeModules, Platform } from 'react-native';
+import {NativeModules, Platform} from 'react-native';
 
 const LINKING_ERROR =
   `The package '@computools/react-native-dynamic-app-icon' doesn't seem to be linked. Make sure: \n\n` +
-  Platform.select({ ios: "- You have run 'pod install'\n", default: '' }) +
+  Platform.select({ios: "- You have run 'pod install'\n", default: ''}) +
   '- You rebuilt the app after installing the package\n' +
   '- You are not using Expo Go\n';
 
@@ -17,6 +17,10 @@ const ReactNativeDynamicAppIcon = NativeModules.ReactNativeDynamicAppIcon
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return ReactNativeDynamicAppIcon.multiply(a, b);
+export function changeIcon(iconName: string): Promise<void> {
+  return ReactNativeDynamicAppIcon.changeIcon(iconName);
+}
+
+export function getIcon(): Promise<string> {
+  return ReactNativeDynamicAppIcon.getIcon();
 }

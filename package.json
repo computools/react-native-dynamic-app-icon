@@ -92,9 +92,6 @@
     "react": "*",
     "react-native": "*"
   },
-  "workspaces": [
-    "example"
-  ],
   "packageManager": "yarn@3.6.1",
   "jest": {
     "preset": "react-native",
@@ -132,7 +129,6 @@
       "prettier"
     ],
     "rules": {
-      "react/react-in-jsx-scope": "off",
       "prettier/prettier": [
         "error",
         {
@@ -142,7 +138,8 @@
           "trailingComma": "es5",
           "useTabs": false
         }
-      ]
+      ],
+      "react-hooks/exhaustive-deps": 0
     }
   },
   "eslintIgnore": [
@@ -154,7 +151,10 @@
     "singleQuote": true,
     "tabWidth": 2,
     "trailingComma": "es5",
-    "useTabs": false
+    "useTabs": false,
+    "printWidth": 150,
+    "bracketSameLine": true,
+    "bracketSpacing": false
   },
   "react-native-builder-bob": {
     "source": "src",
