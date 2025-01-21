@@ -14,6 +14,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-ReactNativeDynamicAppIconExample-ReactNativeDynamicAppIconExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-ReactNativeDynamicAppIconExample-ReactNativeDynamicAppIconExampleTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		D0FBEE394B9A16F637FA5AEF /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -245,6 +246,7 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				D0FBEE394B9A16F637FA5AEF /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,7 +433,7 @@
 					"-lc++",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "computools.reactnativedynamicappicon.example";
+				PRODUCT_BUNDLE_IDENTIFIER = computools.reactnativedynamicappicon.example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactNativeDynamicAppIconExample.app/ReactNativeDynamicAppIconExample";
 			};
@@ -455,7 +457,7 @@
 					"-lc++",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "computools.reactnativedynamicappicon.example";
+				PRODUCT_BUNDLE_IDENTIFIER = computools.reactnativedynamicappicon.example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactNativeDynamicAppIconExample.app/ReactNativeDynamicAppIconExample";
 			};
@@ -465,7 +467,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-ReactNativeDynamicAppIconExample.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = DefaultIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
@@ -481,7 +484,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "computools.reactnativedynamicappicon.example";
+				PRODUCT_BUNDLE_IDENTIFIER = computools.reactnativedynamicappicon.example;
 				PRODUCT_NAME = ReactNativeDynamicAppIconExample;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -493,7 +496,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-ReactNativeDynamicAppIconExample.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = DefaultIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = ReactNativeDynamicAppIconExample/Info.plist;
@@ -508,7 +512,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "computools.reactnativedynamicappicon.example";
+				PRODUCT_BUNDLE_IDENTIFIER = computools.reactnativedynamicappicon.example;
 				PRODUCT_NAME = ReactNativeDynamicAppIconExample;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -584,7 +588,14 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				USE_HERMES = true;
 			};
 			name = Debug;
 		};
@@ -649,7 +660,13 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				USE_HERMES = true;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
