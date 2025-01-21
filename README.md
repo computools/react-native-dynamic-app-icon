@@ -263,8 +263,8 @@ Generate app icons using a tool like [appicon.co](https://www.appicon.co/) to en
 
 Method | Description | Parameters | Returns |
 --- | --- | --- | --- |
-**changeIcon(iconName: string)** | Changes the app's icon to the specified icon. <br/> **Note:** The package automatically closes the app on Android after changing the app icon. This behavior is implemented to prevent duplicate icons and requires no additional action from the user. | iconName (string): The name of the icon to switch to. | `Promise<void>`: Resolves with void or rejects with an error. |
-**getIcon()** | Retrieves the name of the currently active app icon. | None | `Promise<string>`: Resolves with the name of the current used icon or rejects with an error. |
+**changeIcon`<T extends string>`(iconName: T)**| Changes the app's icon to the specified icon. <br/> **Note:** The package automatically closes the app on Android after changing the app icon. This behavior is implemented to prevent duplicate icons and requires no additional action from the user. | iconName (T): The name of the icon to switch to. | `Promise<void>`: Resolves with void or rejects with an error. |
+**getIcon`<T extends string>`()** | Retrieves the name of the currently active app icon. | None | `Promise<T>`: Resolves with the name of the current used icon or rejects with an error. |
 
 ## Usage
 
