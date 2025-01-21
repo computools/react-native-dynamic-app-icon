@@ -11,7 +11,7 @@ Dynamically change the app icon in React Native with cross-platform support for 
     <td>
       <img src="https://ik.imagekit.io/Computools/RN%20Dynamic%20App%20Icons%20/ios_dynamic_app_icon_preview.gif?updatedAt=1737115408393" width="200">
     </td>
-    <td">
+    <td>
       <img src="https://ik.imagekit.io/Computools/RN%20Dynamic%20App%20Icons%20/android_dynamic_app_icon_preview.gif?updatedAt=1737115956222" width="200">
     </td>
   </tr>
