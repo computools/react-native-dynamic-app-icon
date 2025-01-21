@@ -17,10 +17,10 @@ const ReactNativeDynamicAppIcon = NativeModules.ReactNativeDynamicAppIcon
       }
     );
 
-export function changeIcon(iconName: string): Promise<void> {
+export function changeIcon<T extends string>(iconName: T): Promise<void> {
   return ReactNativeDynamicAppIcon.changeIcon(iconName);
 }
 
-export function getIcon(): Promise<string> {
+export function getIcon<T extends string>(): Promise<T> {
   return ReactNativeDynamicAppIcon.getIcon();
 }
