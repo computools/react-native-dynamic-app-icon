@@ -22,7 +22,7 @@
         </intent-filter>
       </activity>
       <activity-alias
-            android:name="${applicationId}.MainActivityDefault"
+            android:name=".MainActivityDefault"
             android:enabled="true"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_default"
@@ -32,7 +32,7 @@
             </intent-filter>
       </activity-alias>
       <activity-alias
-            android:name="${applicationId}.MainActivityPineapple"
+            android:name=".MainActivityPineapple"
             android:enabled="false"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_pineapple"
@@ -43,7 +43,7 @@
             </intent-filter>
       </activity-alias>
       <activity-alias
-            android:name="${applicationId}.MainActivityStrawberry"
+            android:name=".MainActivityStrawberry"
             android:enabled="false"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_strawberry"
@@ -54,7 +54,7 @@
             </intent-filter>
       </activity-alias>
       <activity-alias
-            android:name="${applicationId}.MainActivityOrange"
+            android:name=".MainActivityOrange"
             android:enabled="false"
             android:exported="true"
             android:icon="@mipmap/ic_launcher_orange"
