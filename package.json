@@ -1,6 +1,6 @@
 {
   "name": "@computools/react-native-dynamic-app-icon",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Dynamically change the app icon in React Native with cross-platform support for iOS and Android. Perfect for themes, events, and personalization.",
   "source": "./src/index.tsx",
   "main": "./lib/commonjs/index.js",
@@ -48,7 +48,10 @@
   "keywords": [
     "react-native",
     "ios",
-    "android"
+    "android",
+    "app icon",
+    "dynamic icon",
+    "change app icon"
   ],
   "repository": {
     "type": "git",
