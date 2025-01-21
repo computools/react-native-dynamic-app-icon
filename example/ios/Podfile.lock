@@ -1,6 +1,6 @@
 PODS:
   - boost (1.84.0)
-  - computools-react-native-dynamic-app-icon (0.1.0):
+  - computools-react-native-dynamic-app-icon (1.0.0):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1738,7 +1738,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   boost: 1dca942403ed9342f98334bf4c3621f011aa7946
-  computools-react-native-dynamic-app-icon: 58d35b87cda8b128503812b27b5701f34c1b993d
+  computools-react-native-dynamic-app-icon: ddc273a0647336f355c4b557fbf6853813f405f8
   DoubleConversion: f16ae600a246532c4020132d54af21d0ddb2a385
   FBLazyVector: be509404b5de73a64a74284edcaf73a5d1e128b1
   fmt: 10c6e61f4be25dc963c36bd73fc7b1705fe975be
